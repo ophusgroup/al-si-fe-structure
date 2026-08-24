@@ -15,6 +15,7 @@ import h5py
 import matplotlib
 
 matplotlib.use("Agg")
+import matplotlib.patheffects as pe
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -413,20 +414,23 @@ for key, cfg in ZAS.items():
     ax.imshow(img, cmap="gray", vmin=lo, vmax=hi, origin="upper")
     pg = np.vstack([poly, poly[:1]])
     ax.plot(pg[:, 1], pg[:, 0], "--", color="w", lw=1.2, alpha=0.9)
+    # one shared multiple for both vectors, so the drawn arrows keep the true
+    # length ratio of u and v; the longer one spans 20% of the image
     o = lat[0]
+    kk = 0.20 * max(img.shape) / max(np.linalg.norm(lat[1]),
+                                     np.linalg.norm(lat[2]))
     for vec, col, name in ((lat[1], C_U, "u"), (lat[2], C_V, "v")):
-        k = max(3.0, 0.07 * img.shape[1] / np.linalg.norm(vec))
-        ax.annotate("", xy=(o[1] + k * vec[1], o[0] + k * vec[0]),
-                    xytext=(o[1], o[0]),
-                    arrowprops=dict(color="k", width=8.0, headwidth=16,
-                                    headlength=13))
-        ax.annotate("", xy=(o[1] + k * vec[1], o[0] + k * vec[0]),
-                    xytext=(o[1], o[0]),
-                    arrowprops=dict(color=col, width=4.0, headwidth=11,
-                                    headlength=10))
-        ax.text(o[1] + (k + 0.8) * vec[1], o[0] + (k + 0.8) * vec[0], name,
-                color=col, fontsize=13, fontweight="bold", ha="center",
-                va="center")
+        tip = o + kk * vec
+        ann = ax.annotate("", xy=(tip[1], tip[0]), xytext=(o[1], o[0]),
+                          arrowprops=dict(arrowstyle="-|>", color=col,
+                                          linewidth=1.8, mutation_scale=15,
+                                          shrinkA=0, shrinkB=0))
+        ann.arrow_patch.set_path_effects(
+            [pe.withStroke(linewidth=3.6, foreground="k")])
+        lab = tip + 24.0 * vec / np.linalg.norm(vec)
+        ax.text(lab[1], lab[0], name, color=col, fontsize=13,
+                fontweight="bold", ha="center", va="center",
+                path_effects=[pe.withStroke(linewidth=2.8, foreground="k")])
     # scale bar: 2 nm
     bar = 20.0 / px
     y0, x0 = img.shape[0] * 0.94, img.shape[1] * 0.05
