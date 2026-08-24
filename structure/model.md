@@ -1,6 +1,6 @@
 # The τ₄ Model
 
-The particle is the ternary τ₄ phase, Al₃FeSi₂, in the tetragonal structure determined by Guéneau et al. [](#gueneau1995). It occurs in the particle as two orientation domains of the same structure, described below.
+Our leading model for the particle is the ternary τ₄ phase, Al₃FeSi₂, in the tetragonal structure determined by Guéneau et al. [](#gueneau1995), present as two orientation domains of the same structure. We state it as a model rather than a settled fact: the comparisons behind it are projected-potential simulations against averaged images, not full dynamical calculations, and the [evidence page](evidence.md) lists both the quantitative agreement and what remains open. Every alternative we have constructed fits the data worse.
 
 ## The phase
 

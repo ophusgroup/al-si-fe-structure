@@ -3,9 +3,10 @@
 // Drag to rotate, or use the 15 degree step buttons (screen x, y, z axes).
 // Zone buttons snap the view axis exactly onto the crystal zone axes recorded
 // in the experiment. The projection toggle replaces the ball model with a
-// live gaussian-splat projected potential (Fe weighted 3x, matching the mean
-// unit cell simulations), so snapping to a zone reproduces the corresponding
-// mean unit cell pattern. Follows the site light/dark theme. View state
+// live gaussian-splat projected potential integrated along a long, taper-
+// windowed beam path (Fe weighted 3x, matching the mean unit cell
+// simulations), so snapping to a zone reproduces the corresponding mean
+// unit cell pattern, including zones with long lattice repeats. Follows the site light/dark theme. View state
 // survives re-renders (e.g. theme switches).
 //
 //   :::{anywidget} ../widgets/structure-3d.js
@@ -76,6 +77,19 @@ function render({ model, el }) {
           const x = (fx + i - 0.5) * CELL[0], y = (fy + j - 0.5) * CELL[1],
             z = (fz + k - 0.5) * CELL[2];
           if (x * x + y * y + z * z < 13.5 * 13.5) atoms.push([x, y, z, s]);
+        }
+  // larger atom set for projection mode: the projection integrates through a
+  // long beam path (taper-windowed), so every column averages several lattice
+  // periods along any zone. The small sphere above is only for the ball view.
+  const patoms = [];
+  for (let i = -7; i <= 7; i++)
+    for (let j = -7; j <= 7; j++)
+      for (let k = -5; k <= 5; k++)
+        for (const [fx, fy, fz, s] of BASIS) {
+          const x = (fx + i - 0.5) * CELL[0], y = (fy + j - 0.5) * CELL[1],
+            z = (fz + k - 0.5) * CELL[2];
+          if (x * x + y * y + z * z < 42 * 42)
+            patoms.push([x, y, z, STYLE[s][2]]);
         }
   const cn = [];
   for (let i = 0; i < 8; i++)
@@ -214,10 +228,16 @@ function render({ model, el }) {
     const gx = W / n, gy = H / m;
     const s2 = 2 * sigma * sigma;
     const rad = Math.ceil(3.2 * sigma * scale / gx);
-    for (const p of atoms) {
-      const q = apply(p);
-      const wgt = STYLE[p[3]][2];
-      const cx = (W/2 + q[0]*scale) / gx, cy = (H/2 - q[1]*scale) / gy;
+    const HALF = 40, SB = 16;                      // gaussian beam window (Angstrom)
+    const xlim = W / 2 / scale + 3, ylim = H / 2 / scale + 3;
+    for (const p of patoms) {
+      const qx = R[0][0]*p[0] + R[0][1]*p[1] + R[0][2]*p[2];
+      const qy = R[1][0]*p[0] + R[1][1]*p[1] + R[1][2]*p[2];
+      const qt = R[2][0]*p[0] + R[2][1]*p[1] + R[2][2]*p[2];
+      if (qt > HALF || qt < -HALF) continue;
+      if (qx > xlim || qx < -xlim || qy > ylim || qy < -ylim) continue;
+      const wgt = p[3] * Math.exp(-(qt * qt) / (2 * SB * SB));
+      const cx = (W/2 + qx*scale) / gx, cy = (H/2 - qy*scale) / gy;
       const i0 = Math.max(0, Math.floor(cx - rad)), i1 = Math.min(n - 1, Math.ceil(cx + rad));
       const j0 = Math.max(0, Math.floor(cy - rad)), j1 = Math.min(m - 1, Math.ceil(cy + rad));
       for (let j = j0; j <= j1; j++)
@@ -227,8 +247,8 @@ function render({ model, el }) {
         }
     }
     let mx = 0;
-    for (let j = Math.floor(m*0.32); j < m*0.68; j++)
-      for (let i = Math.floor(n*0.32); i < n*0.68; i++) mx = Math.max(mx, acc[j*n+i]);
+    for (let j = Math.floor(m*0.25); j < m*0.75; j++)
+      for (let i = Math.floor(n*0.25); i < n*0.75; i++) mx = Math.max(mx, acc[j*n+i]);
     const img = g.createImageData(n, m);
     const isDark = dark();
     for (let k = 0; k < n * m; k++) {
@@ -239,11 +259,16 @@ function render({ model, el }) {
     off.getContext("2d").putImageData(img, 0, 0);
     g.imageSmoothingEnabled = true;
     g.drawImage(off, 0, 0, W, H);
-    const bg = th.bg;
-    const vg = g.createRadialGradient(W/2, H/2, H * 0.33, W/2, H/2, H * 0.60);
-    vg.addColorStop(0, bg + "00");
-    vg.addColorStop(1, bg);
-    g.fillStyle = vg; g.fillRect(0, 0, W, H);
+    // unit cell boundaries on top of the projection
+    g.strokeStyle = isDark ? "rgba(255,255,255,0.65)" : "rgba(0,0,0,0.55)";
+    g.lineWidth = 1.4;
+    for (const [i, j] of edges) {
+      const a = apply(cn[i]), b = apply(cn[j]);
+      g.beginPath();
+      g.moveTo(W/2 + a[0]*scale, H/2 - a[1]*scale);
+      g.lineTo(W/2 + b[0]*scale, H/2 - b[1]*scale);
+      g.stroke();
+    }
   }
 
   // controls

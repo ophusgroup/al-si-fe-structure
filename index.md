@@ -20,12 +20,12 @@ Stanford University
 
 :::{div}
 :class: msc-tagline
-Fe is the most common impurity element in aluminum alloys, and the intermetallic particles it forms control the mechanical properties of Al-Si castings. We recorded atomic resolution STEM images of a single Al-Si-Fe intermetallic particle along nine zone axes, together with quantitative EDS of the same particle. This site documents the structure determination: the particle is the tetragonal τ₄ (δ) phase Al₃FeSi₂, present as two orientation domains that together account for every recorded image.
+Fe is the most common impurity element in aluminum alloys, and the intermetallic particles it forms control the mechanical properties of Al-Si castings. We recorded atomic resolution STEM images of a single Al-Si-Fe intermetallic particle along nine zone axes, together with quantitative EDS of the same particle. This site documents the structure analysis. The leading model is the tetragonal τ₄ (δ) phase Al₃FeSi₂, present as two orientation domains; this model accounts quantitatively for every recorded image, and the alternatives we have tested do not.
 :::
 
 ## Summary
 
-The particle composition from EDS is Al 52.6, Si 29.4, Fe 18.3 atomic percent, in the stability field of the τ₄ phase. The nine zone-axis datasets divide between two orientation domains of the same τ₄ structure. Five image domain A and three image domain B; the two orientations are related by an approximately 90 degree switch of the tetragonal axis on the pseudo-cubic Fe subcell, the ferroelastic domain relationship expected for this structure. Simulated projections of the published structure match all eight averaged unit cells with correlation coefficients of 0.95 to 1.00, using a single global Fe contrast weight and one fitted blur width per image.
+The particle composition from EDS is Al 52.6, Si 29.4, Fe 18.3 atomic percent, in the stability field of the τ₄ phase. In the leading model, the nine zone-axis datasets divide between two orientation domains of the same τ₄ structure. Five image domain A and three image domain B; the two orientations are related by an approximately 90 degree switch of the tetragonal axis on the pseudo-cubic Fe subcell, the ferroelastic domain relationship expected for this structure. Simulated projections of the published structure match all eight averaged unit cells with correlation coefficients of 0.95 to 1.00, using a single global Fe contrast weight and one fitted blur width per image.
 
 | Dataset | Tilt $\alpha$, $\beta$ (deg) | Domain | Zone axis | Simulation match |
 | --- | --- | --- | --- | --- |

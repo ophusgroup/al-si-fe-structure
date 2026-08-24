@@ -10,7 +10,7 @@ The Al-Fe-Si system contains roughly twelve stable ternary phases, labeled $\tau
 | $\tau_6$ ($\beta$) | Al$_{4.5}$FeSi | Fe 15.5–16.5, Si 17–19 | $A2/a$, mC52 |
 | $\tau_7$ | Al$_3$Fe$_2$Si$_3$ | Fe 23.5–24.5, Si 27.8–36.3 | $P2_1/n$, mP64 |
 
-Our measured composition (Al 52.6, Si 29.4, Fe 18.3) sits in the $\tau_4$ field, about 2 atomic percent rich in Fe relative to the reported range. The measured lattice, the projected cells along eight zone axes, and the tilt geometry all confirm the $\tau_4$ assignment; no other phase in the system indexes even a majority of the observed orientations.
+Our measured composition (Al 52.6, Si 29.4, Fe 18.3) sits in the $\tau_4$ field, about 2 atomic percent rich in Fe relative to the reported range. The measured lattice, the projected cells along eight zone axes, and the tilt geometry all support the $\tau_4$ assignment; no other phase in the system indexes even a majority of the observed orientations.
 
 ## Naming
 
@@ -24,4 +24,4 @@ Becker et al. [](#becker2019) showed that $\beta$ and $\delta$ ($\tau_4$) are bu
 
 ## What is new here
 
-Two results on this site are not, to our knowledge, in the published record. First, the direct multi-zone-axis confirmation of the $\tau_4$ structure in a single particle by atomic resolution imaging, including quantitative agreement of eight projected cells. Second, the identification of two τ₄ orientation domains within one particle, related by an approximately 90 degree switch of the tetragonal axis on the shared pseudo-cubic Fe subcell. The domain B lattice was reconstructed from the imaging data alone and verified against the goniometer geometry to a fraction of a degree. The pseudo-cubic subcell makes such ferroelastic domains natural, and we expect them to be a general feature of τ₄ particles in castings.
+Two results on this site are not, to our knowledge, in the published record. First, the direct multi-zone-axis test of the $\tau_4$ structure in a single particle by atomic resolution imaging, including quantitative agreement of eight projected cells. Second, the identification of two τ₄ orientation domains within one particle, related by an approximately 90 degree switch of the tetragonal axis on the shared pseudo-cubic Fe subcell. The domain B lattice was reconstructed from the imaging data alone and verified against the goniometer geometry to a fraction of a degree. The pseudo-cubic subcell makes such ferroelastic domains natural, and we expect them to be a general feature of τ₄ particles in castings.

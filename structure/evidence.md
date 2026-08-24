@@ -1,6 +1,6 @@
 # Evidence
 
-The assignment rests on four independent measurements: the lattice geometry of the mean unit cells, the goniometer tilt angles, the reconstruction of the second domain's lattice with no structure assumed, and the pixel-level agreement between simulated and experimental projections. This page collects the quantitative comparisons and the alternatives that were tested and rejected.
+The τ₄ assignment is the leading hypothesis, supported by four independent measurements: the lattice geometry of the mean unit cells, the goniometer tilt angles, the reconstruction of the second domain's lattice with no structure assumed, and the pixel-level agreement between simulated and experimental projections. This page collects the quantitative comparisons and the alternatives that were tested and rejected.
 
 ## Pixel calibration
 
@@ -76,4 +76,6 @@ The following competing hypotheses were tested quantitatively and rejected, or f
 | Refined $16l$ position | free $(x, z)$ fit against the sensitive zones | optimum within 0.1 Å of published values |
 | Fe/(Al,Si) contrast ratio | global weight scan | best at 3.0, matching $Z^{1.7}$ |
 
-The one measurement that does not close cleanly is the domain boundary crystallography, discussed on the [model page](model.md): the misorientation is near, but not exactly, a ferroelastic twin operation.
+## What remains open
+
+Three items keep the assignment a leading hypothesis rather than a closed case. The image comparisons use a projected-potential approximation with a fitted Gaussian blur; a full dynamical (multislice) simulation with the experimental thickness and detector geometry has not yet been run, and channeling can in principle reshape column intensities. The domain boundary has not been imaged, and the measured misorientation between the domains is near, but not exactly, a ferroelastic twin operation. And the diffuse superstructure intensity has been interpreted, not modeled: a quantitative fit of the (001) antiphase domain size to the streak profiles is future work. None of these open items currently favors a competing structure.
