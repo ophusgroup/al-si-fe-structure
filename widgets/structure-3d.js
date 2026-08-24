@@ -197,10 +197,16 @@ function render({ model, el }) {
     const n = parseInt(hex.slice(1), 16);
     return `rgb(${Math.round(((n>>16)&255)*f)},${Math.round(((n>>8)&255)*f)},${Math.round((n&255)*f)})`;
   }
-  function infMap(t) {
-    const x = Math.max(0, Math.min(1, t)) * (INF.length - 1);
-    const i = Math.min(INF.length - 2, Math.floor(x)), f = x - i;
-    return [0, 1, 2].map(k => Math.round(INF[i][k] * (1 - f) + INF[i + 1][k] * f));
+  function cmap(t, isDark) {
+    t = Math.max(0, Math.min(1, t));
+    if (isDark) {
+      const x = t * (INF.length - 1);
+      const i = Math.min(INF.length - 2, Math.floor(x)), f = x - i;
+      return [0, 1, 2].map(k => Math.round(INF[i][k] * (1 - f) + INF[i + 1][k] * f));
+    }
+    // light mode: inverse grayscale, white background to dark peaks
+    const v = Math.round(255 * (1 - 0.92 * t));
+    return [v, v, v];
   }
   function drawProj(th) {
     const n = 168, m = 124;
@@ -224,8 +230,9 @@ function render({ model, el }) {
     for (let j = Math.floor(m*0.32); j < m*0.68; j++)
       for (let i = Math.floor(n*0.32); i < n*0.68; i++) mx = Math.max(mx, acc[j*n+i]);
     const img = g.createImageData(n, m);
+    const isDark = dark();
     for (let k = 0; k < n * m; k++) {
-      const [r, gg2, b] = infMap(acc[k] / (mx || 1));
+      const [r, gg2, b] = cmap(acc[k] / (mx || 1), isDark);
       img.data[4*k] = r; img.data[4*k+1] = gg2; img.data[4*k+2] = b; img.data[4*k+3] = 255;
     }
     const off = document.createElement("canvas"); off.width = n; off.height = m;
