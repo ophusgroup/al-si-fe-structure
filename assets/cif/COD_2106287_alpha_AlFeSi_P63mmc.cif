@@ -1,0 +1,117 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# https://www.crystallography.net/cod/2106287.cif
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2106287
+loop_
+_publ_author_name
+'Corby, R.N.'
+'Black, P.J.'
+_publ_section_title
+;
+ The structure of alpha-(Al Fe Si) by anomalous dispersion methods
+;
+_journal_name_full               'Acta Crystallographica B (24,1968-38,1982)'
+_journal_page_first              3468
+_journal_page_last               3475
+_journal_volume                  33
+_journal_year                    1977
+_chemical_formula_sum            'Al167.8 Fe44.9 Si23.9'
+_space_group_IT_number           194
+_symmetry_space_group_name_Hall  '-P 6c 2c'
+_symmetry_space_group_name_H-M   'P 63/m m c'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            1
+_cell_length_a                   12.404
+_cell_length_b                   12.404
+_cell_length_c                   26.234
+_cell_volume                     3495.575
+_citation_journal_id_ASTM        ACBCAR
+_cod_data_source_file            Corby_ACBCAR_1977_757.cif
+_cod_data_source_block           Al167.8Fe44.9Si23.9
+_cod_database_code               2106287
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x-y,x,z+1/2
+-y,x-y,z
+-x,-y,z+1/2
+-x+y,-x,z
+y,-x+y,z+1/2
+-y,-x,-z+1/2
+x-y,-y,-z
+x,x-y,-z+1/2
+y,x,-z
+-x+y,y,-z+1/2
+-x,-x+y,-z
+-x,-y,-z
+-x+y,-x,-z-1/2
+y,-x+y,-z
+x,y,-z-1/2
+x-y,x,-z
+-y,x-y,-z-1/2
+y,x,z-1/2
+-x+y,y,z
+-x,-x+y,z-1/2
+-y,-x,z
+x-y,-y,z-1/2
+x,x-y,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Al14 Al 0.8384 0.6768 0.25 0.875 0.0
+Al10 Al 0.0693 0.1386 0.0766 0.875 0.0
+Al17 Al 0.4195 0.839 0.25 0.28 0.0
+Fe4 Fe 0.2084 0.4168 0.25 0.99 0.0
+Fe5 Fe 0.3333 0.6667 0.0995 1 0.0
+Al2 Al 0.3315 0.3425 0.198 0.866 0.0
+Al6 Al 0.4533 0.9066 0.1063 0.875 0.0
+Al18 Al 0.3333 0.6667 0.25 0.254 0.0
+Si13 Si 0.573 0.146 0.25 0.12 0.0
+Al15 Al 0.0921 0.1842 0.25 0.814 0.0
+Si6 Si 0.4533 0.9066 0.1063 0.125 0.0
+Al3 Al 0.3726 0 0 0.866 0.0
+Al12 Al 0.2521 0.5042 0.1652 0.875 0.0
+Si16 Si 0.4423 0.8846 0.25 0.083 0.0
+Si14 Si 0.8384 0.6768 0.25 0.125 0.0
+Al8 Al 0.5968 0.1936 0.0814 0.875 0.0
+Si10 Si 0.0693 0.1386 0.0766 0.125 0.0
+Si8 Si 0.5968 0.1936 0.0814 0.125 0.0
+Si4 Si 0.1105 0.221 0.9824 0.126 0.0
+Si18 Si 0.3333 0.6667 0.25 0.036 0.0
+Al7 Al 0.0835 0.167 0.8319 0.849 0.0
+Si9 Si 0.2025 0.405 0.0683 0.131 0.0
+Fe2 Fe 0.1305 0.261 0.1503 1 0.0
+Si5 Si 0.4041 0.8082 0.0169 0.126 0.0
+Si1 Si 0.3467 0.2906 0.1027 0.126 0.0
+Al13 Al 0.573 0.146 0.25 0.84 0.0
+Fe1 Fe 0.5406 0.0812 0.1601 0.99 0.0
+Al16 Al 0.4423 0.8846 0.25 0.578 0.0
+Al11 Al 0.2513 0.5026 0.8263 0.893 0.0
+Al4 Al 0.1105 0.221 0.9824 0.884 0.0
+Al9 Al 0.2025 0.405 0.0683 0.919 0.0
+Si2 Si 0.3315 0.3425 0.198 0.124 0.0
+Si15 Si 0.0921 0.1842 0.25 0.116 0.0
+Si11 Si 0.2513 0.5026 0.8263 0.128 0.0
+Al1 Al 0.3467 0.2906 0.1027 0.884 0.0
+Al5 Al 0.4041 0.8082 0.0169 0.884 0.0
+Si7 Si 0.0835 0.167 0.8319 0.121 0.0
+Si17 Si 0.4195 0.839 0.25 0.04 0.0
+Si12 Si 0.2521 0.5042 0.1652 0.125 0.0
+Fe3 Fe 0.216 0.432 0.9693 1 0.0
+Si3 Si 0.3726 0 0 0.124 0.0

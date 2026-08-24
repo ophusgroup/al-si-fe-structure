@@ -1,0 +1,119 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-19 16:29:56 +0200 (Fri, 19 Feb 2016) $
+#$Revision: 176759 $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# https://www.crystallography.net/cod/2005761.cif
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2005761
+loop_
+_publ_author_name
+'Yanson, T. I.'
+'Manyako, M. B.'
+'Bodak, O. I.'
+'German, N. V.'
+'Zarechnyuk, O. S.'
+'Cern\'y, R.'
+'Pacheco, J. V.'
+'Yvon, K.'
+_publ_section_title
+;
+ Triclinic Fe~3~Al~2~Si~3~ and Orthorhombic Fe~3~Al~2~Si~4~ with New
+ Structure Types
+;
+_journal_issue                   12
+_journal_name_full               'Acta Crystallographica Section C'
+_journal_page_first              2964
+_journal_page_last               2967
+_journal_paper_doi               10.1107/S0108270196008694
+_journal_volume                  52
+_journal_year                    1996
+_chemical_formula_iupac          'Fe3 Al2 Si3'
+_chemical_formula_structural     'Fe3 Al2 Si3'
+_chemical_formula_sum            'Al2 Fe3 Si3'
+_chemical_formula_weight         305.76
+_space_group_IT_number           2
+_symmetry_cell_setting           triclinic
+_symmetry_space_group_name_Hall  '-P 1'
+_symmetry_space_group_name_H-M   'P -1'
+_cell_angle_alpha                101.375(23)
+_cell_angle_beta                 105.923(17)
+_cell_angle_gamma                101.237(19)
+_cell_formula_units_Z            2
+_cell_length_a                   4.6512(16)
+_cell_length_b                   6.3261(24)
+_cell_length_c                   7.499(3)
+_cell_measurement_reflns_used    30
+_cell_measurement_temperature    293
+_cell_volume                     200.63(14)
+_diffrn_ambient_temperature      293
+_diffrn_measurement_device       'Stoe_Stadi-4 4-circle'
+_diffrn_radiation_type           x-ray
+_diffrn_radiation_wavelength     .71073
+_diffrn_reflns_av_R_equivalents  .07
+_diffrn_reflns_number            2562
+_diffrn_reflns_theta_max         30
+_exptl_absorpt_coefficient_mu    11.821
+_exptl_crystal_colour            grey
+_exptl_crystal_density_diffrn    5.062
+_exptl_crystal_description       plate
+_exptl_crystal_F_000             292
+_refine_ls_R_factor_all          .068
+_refine_ls_R_factor_obs          .056
+_refine_ls_wR_factor_all         .031
+_refine_ls_wR_factor_obs         .031
+_reflns_number_observed          1046
+_reflns_number_total             1168
+_cod_data_source_file            du1157.cif
+_cod_data_source_block           Fe~3~Al~2~Si~3~
+_cod_original_cell_volume        200.63(14)
+_cod_database_code               2005761
+loop_
+_symmetry_equiv_pos_as_xyz
++x,+y,+z
+-x,-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Fe1 .0094(4) .0082(4) .0091(4) .0029(3) .0045(3) .0011(3)
+Fe2 .0079(4) .0066(4) .0075(4) .0029(3) .0026(3) .0024(3)
+Fe3 .0082(4) .0087(4) .0087(4) .0034(3) .0024(3) .0024(3)
+Al1 .0114(9) .0084(8) .0078(7) .0032(7) .0038(6) .0029(7)
+Al2 .0064(8) .0054(8) .0172(9) .0015(6) .0057(7) .0016(7)
+Si1 .0092(8) .0145(8) .0137(8) .0056(6) .0042(6) .0060(7)
+Si2 .0090(7) .0090(7) .0100(7) .0036(6) .0021(6) .0028(6)
+Si3 .0092(8) .0057(7) .0092(7) .0026(6) .0039(6) .0011(6)
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_thermal_displace_type
+Fe1 .03790(19) .29782(14) .41027(12) .0087(3) Uani
+Fe2 .13449(19) .31956(13) .05623(11) .0071(3) Uani
+Fe3 .36147(19) .02378(13) .22702(11) .0084(3) Uani
+Al1 .0633(4) .6522(3) .2757(3) .0088(6) Uani
+Al2 .4058(4) .6734(3) .0383(3) .0095(6) Uani
+Si1 .2808(4) .0509(3) .5372(3) .0117(6) Uani
+Si2 .5428(4) .4147(3) .3476(3) .0093(5) Uani
+Si3 .8222(3) .0191(3) .1174(3) .0079(5) Uani
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Al Al .056 .052 'IntTabIV Tables 2.2B and 2.3.1'
+Fe Fe .301 .845 'IntTabIV Tables 2.2B and 2.3.1'
+Si Si .072 .071 'IntTabIV Tables 2.2B and 2.3.1'

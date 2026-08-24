@@ -1,0 +1,208 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-14 06:40:26 +0200 (Sun, 14 Feb 2016) $
+#$Revision: 176432 $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# https://www.crystallography.net/cod/4330511.cif
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+# NOTE: geometry (bond/angle) tables from the original COD entry were
+# omitted in this copy to keep the file compact. The full entry is at
+# the COD URL above.
+#
+data_4330511
+loop_
+_publ_author_name
+'Rie T. Fredrickson'
+'Daniel C. Fredrickson'
+_publ_contact_author_address
+;
+Department of Chemistry
+University of Wisconsin-Madison
+1101 University Avenue
+Madison, WI  53706
+;
+_publ_contact_author_email       danny@chem.wisc.edu
+_publ_contact_author_name        'Daniel C. Fredrickson'
+_publ_section_title
+;
+ Fragmentation of the Fluorite Type in Fe8Al17.4Si7.6: Structural
+ Complexity in Intermetallics Dictated by the 18 Electron Rule
+;
+_journal_name_full               'Inorganic Chemistry'
+_journal_page_first              10341
+_journal_page_last               10349
+_journal_paper_doi               10.1021/ic3015089
+_journal_volume                  51
+_journal_year                    2012
+_chemical_formula_sum            'Al17.397 Fe8 Si7.603'
+_chemical_formula_weight         1129.7
+_chemical_name_systematic        ' ?'
+_space_group_IT_number           14
+_symmetry_cell_setting           monoclinic
+_symmetry_Int_Tables_number      14
+_symmetry_space_group_name_Hall  '-P 2ybc'
+_symmetry_space_group_name_H-M   'P 1 21/c 1'
+_audit_creation_method           'Jana2006 Version : 01/07/2011'
+_cell_angle_alpha                90
+_cell_angle_beta                 94.841(2)
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   8.5743(2)
+_cell_length_b                   15.2402(3)
+_cell_length_c                   14.1749(3)
+_cell_measurement_reflns_used    5515
+_cell_measurement_temperature    293
+_cell_volume                     1845.68(7)
+_diffrn_ambient_temperature      293
+_diffrn_radiation_type           'Mo K\a'
+_diffrn_radiation_wavelength     0.71069
+_diffrn_reflns_av_R_equivalents  0.0265
+_diffrn_reflns_number            17769
+_exptl_absorpt_coefficient_mu    7.425
+_exptl_absorpt_correction_type   multi-scan
+_exptl_crystal_colour            'metallic black'
+_exptl_crystal_density_diffrn    4.0643
+_exptl_crystal_description       Plate
+_exptl_crystal_F_000             2162
+_refine_ls_number_constraints    18
+_refine_ls_number_parameters     299
+_refine_ls_number_reflns         4454
+_refine_ls_R_factor_all          0.0487
+_refine_ls_R_factor_gt           0.0212
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details     w=1/(\s^2^(I)+0.000049I^2^)
+_refine_ls_weighting_scheme      sigma
+_refine_ls_wR_factor_gt          0.0405
+_refine_ls_wR_factor_ref         0.0421
+_reflns_number_gt                2362
+_reflns_number_total             4454
+_reflns_threshold_expression     I>3\s(I)
+_cod_data_source_file            ic3015089_si_002.cif
+_cod_data_source_block           I
+_cod_original_sg_symbol_Hall     '-P 2ycb'
+_cod_database_code               4330511
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x,y+1/2,-z+1/2
+3 -x,-y,-z
+4 x,-y+1/2,z+1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_adp_type
+_atom_site_U_iso_or_equiv
+_atom_site_symmetry_multiplicity
+_atom_site_occupancy
+_atom_site_calc_flag
+Fe1 Fe 0.8448(2) 0.00055(8) 0.05238(13) Uani 0.0053(5) 4 1 d
+Fe2 Fe 0.3472(2) 0.50125(8) 0.05101(13) Uani 0.0050(5) 4 1 d
+Fe3 Fe 0.4032(2) 0.00006(8) 0.19612(14) Uani 0.0056(5) 4 1 d
+Fe4 Fe 0.24924(14) 0.70026(11) 0.24590(12) Uani 0.0057(4) 4 1 d
+Fe5 Fe 0.22787(15) 0.29756(10) 0.25606(12) Uani 0.0054(3) 4 1 d
+Fe6 Fe 0.9037(2) 0.50001(8) 0.20147(13) Uani 0.0051(5) 4 1 d
+Fe7 Fe 0.50343(13) 0.79840(11) 0.00441(12) Uani 0.0064(4) 4 1 d
+Fe8 Fe 0.02206(15) 0.20067(11) 0.49429(12) Uani 0.0055(3) 4 1 d
+Si1a Si 0.8336(4) 0.5828(2) 0.0539(3) Uani 0.0072(8) 4 0.8448 d
+Si2a Si 0.3385(4) 0.0870(2) 0.0519(2) Uani 0.0074(7) 4 0.8448 d
+Si3a Si 0.4109(4) 0.5838(2) 0.1959(3) Uani 0.0078(8) 4 0.8448 d
+Si4a Si 0.9128(4) 0.0874(2) 0.1964(3) Uani 0.0084(7) 4 0.8448 d
+Si5a Si 0.9202(4) 0.9128(2) 0.1934(2) Uani 0.0056(8) 4 0.8448 d
+Si6a Si 0.62229(19) 0.26420(6) 0.12582(12) Uani 0.0098(3) 4 0.8448 d
+Si7a Si 0.7403(3) 0.74089(17) 0.08452(18) Uani 0.0112(6) 4 0.8448 d
+Si8a Si 0.0112(3) 0.75619(17) 0.16557(18) Uani 0.0108(6) 4 0.8448 d
+Si9a Si 0.3370(4) 0.9107(2) 0.0541(3) Uani 0.0085(8) 4 0.8448 d
+Si1b Al 0.8336(4) 0.5828(2) 0.0539(3) Uani 0.0072(8) 4 0.1552 d
+Si2b Al 0.3385(4) 0.0870(2) 0.0519(2) Uani 0.0074(7) 4 0.1552 d
+Si3b Al 0.4109(4) 0.5838(2) 0.1959(3) Uani 0.0078(8) 4 0.1552 d
+Si4b Al 0.9128(4) 0.0874(2) 0.1964(3) Uani 0.0084(7) 4 0.1552 d
+Si5b Al 0.9202(4) 0.9128(2) 0.1934(2) Uani 0.0056(8) 4 0.1552 d
+Si6b Al 0.62229(19) 0.26420(6) 0.12582(12) Uani 0.0098(3) 4 0.1552 d
+Si7b Al 0.7403(3) 0.74089(17) 0.08452(18) Uani 0.0112(6) 4 0.1552 d
+Si8b Al 0.0112(3) 0.75619(17) 0.16557(18) Uani 0.0108(6) 4 0.1552 d
+Si9b Al 0.3370(4) 0.9107(2) 0.0541(3) Uani 0.0085(8) 4 0.1552 d
+Al1 Al 0.6257(7) 0.49878(8) 0.1277(4) Uani 0.0071(4) 4 1 d
+Al2 Al 0.0013(3) 0.3656(3) 0.4969(3) Uani 0.0089(9) 4 1 d
+Al3 Al 0.1202(6) 0.58779(8) 0.1228(4) Uani 0.0080(4) 4 1 d
+Al4 Al 0.6301(6) 0.91186(8) 0.1265(4) Uani 0.0080(4) 4 1 d
+Al5 Al 0.5041(3) 0.6305(3) 0.0042(3) Uani 0.0076(9) 4 1 d
+Al6 Al 0.1262(6) 0.41079(7) 0.1251(4) Uani 0.0070(4) 4 1 d
+Al7 Al 0.27395(16) 0.24887(10) 0.09808(10) Uani 0.0099(4) 4 1 d
+Al8 Al 0.8302(4) 0.3989(2) 0.0583(3) Uani 0.0080(7) 4 1 d
+Al9 Al 0.1253(7) 0.00267(8) 0.1229(4) Uani 0.0065(4) 4 1 d
+Al10 Al 0.6241(6) 0.09354(7) 0.1246(4) Uani 0.0082(4) 4 1 d
+Al11 Al 0.97268(16) 0.25017(10) 0.15109(10) Uani 0.0105(4) 4 1 d
+Al12 Al 0.2466(3) 0.8690(3) 0.2438(3) Uani 0.0079(9) 4 1 d
+Al13 Al 0.5011(3) 0.75263(18) 0.18864(18) Uani 0.0093(6) 4 1 d
+Al14 Al 0.2501(3) 0.74307(17) 0.06104(19) Uani 0.0109(6) 4 1 d
+Al15 Al 0.4208(4) 0.3976(2) 0.1919(3) Uani 0.0077(7) 4 1 d
+Al16 Al 0.2451(4) 0.1334(3) 0.2501(3) Uani 0.0089(9) 4 1 d
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_type_symbol
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Fe1 Fe 0.0040(10) 0.0065(8) 0.0057(7) 0.0001(5) 0.0014(6) 0.0005(6)
+Fe2 Fe 0.0037(9) 0.0061(8) 0.0055(8) -0.0002(5) 0.0013(6) 0.0007(6)
+Fe3 Fe 0.0060(10) 0.0035(8) 0.0071(8) 0.0002(5) 0.0000(6) 0.0002(6)
+Fe4 Fe 0.0061(6) 0.0055(6) 0.0057(6) -0.0004(4) 0.0009(4) -0.0005(5)
+Fe5 Fe 0.0059(5) 0.0037(6) 0.0068(6) 0.0005(4) 0.0016(4) -0.0006(5)
+Fe6 Fe 0.0061(10) 0.0028(8) 0.0064(8) 0.0001(5) 0.0008(6) 0.0000(6)
+Fe7 Fe 0.0069(6) 0.0063(6) 0.0059(6) -0.0016(4) 0.0006(5) 0.0000(5)
+Fe8 Fe 0.0056(5) 0.0045(6) 0.0064(6) 0.0006(4) 0.0012(4) 0.0000(5)
+Si1a Si 0.0087(14) 0.0058(13) 0.0068(16) -0.0021(10) -0.0007(11) 0.0006(11)
+Si2a Si 0.0064(11) 0.0072(11) 0.0084(12) -0.0015(8) -0.0009(8) 0.0002(8)
+Si3a Si 0.0073(14) 0.0082(13) 0.0082(16) 0.0023(10) 0.0017(11) -0.0003(11)
+Si4a Si 0.0091(12) 0.0067(11) 0.0093(12) 0.0016(8) 0.0004(8) -0.0020(9)
+Si5a Si 0.0034(13) 0.0068(12) 0.0070(16) -0.0019(10) 0.0025(11) 0.0006(11)
+Si6a Si 0.0135(5) 0.0067(5) 0.0085(5) 0.0002(7) -0.0037(4) -0.0005(8)
+Si7a Si 0.0082(9) 0.0164(11) 0.0092(11) 0.0015(8) 0.0012(7) -0.0019(9)
+Si8a Si 0.0079(9) 0.0142(10) 0.0102(11) 0.0030(7) -0.0003(7) -0.0027(9)
+Si9a Si 0.0115(15) 0.0056(12) 0.0080(16) 0.0022(10) -0.0018(11) -0.0020(11)
+Si1b Al 0.0087(14) 0.0058(13) 0.0068(16) -0.0021(10) -0.0007(11) 0.0006(11)
+Si2b Al 0.0064(11) 0.0072(11) 0.0084(12) -0.0015(8) -0.0009(8) 0.0002(8)
+Si3b Al 0.0073(14) 0.0082(13) 0.0082(16) 0.0023(10) 0.0017(11) -0.0003(11)
+Si4b Al 0.0091(12) 0.0067(11) 0.0093(12) 0.0016(8) 0.0004(8) -0.0020(9)
+Si5b Al 0.0034(13) 0.0068(12) 0.0070(16) -0.0019(10) 0.0025(11) 0.0006(11)
+Si6b Al 0.0135(5) 0.0067(5) 0.0085(5) 0.0002(7) -0.0037(4) -0.0005(8)
+Si7b Al 0.0082(9) 0.0164(11) 0.0092(11) 0.0015(8) 0.0012(7) -0.0019(9)
+Si8b Al 0.0079(9) 0.0142(10) 0.0102(11) 0.0030(7) -0.0003(7) -0.0027(9)
+Si9b Al 0.0115(15) 0.0056(12) 0.0080(16) 0.0022(10) -0.0018(11) -0.0020(11)
+Al1 Al 0.0045(7) 0.0103(6) 0.0064(8) -0.0005(16) 0.0010(5) 0.0005(19)
+Al2 Al 0.0113(18) 0.0034(14) 0.0120(16) -0.0010(10) 0.0004(12) -0.0005(13)
+Al3 Al 0.0084(8) 0.0078(6) 0.0080(7) 0.0000(17) 0.0016(6) 0.0006(18)
+Al4 Al 0.0075(8) 0.0072(6) 0.0095(7) -0.0016(16) 0.0014(6) -0.0004(18)
+Al5 Al 0.0083(18) 0.0035(14) 0.0109(16) -0.0006(9) 0.0003(12) 0.0010(12)
+Al6 Al 0.0065(7) 0.0065(6) 0.0081(7) 0.0002(17) 0.0004(5) 0.0003(19)
+Al7 Al 0.0120(8) 0.0103(8) 0.0075(7) 0.0038(6) 0.0021(6) -0.0003(7)
+Al8 Al 0.0061(12) 0.0094(12) 0.0080(13) 0.0038(9) -0.0019(9) -0.0019(10)
+Al9 Al 0.0031(7) 0.0113(6) 0.0051(7) 0.0001(16) 0.0007(5) -0.0005(19)
+Al10 Al 0.0078(7) 0.0088(6) 0.0081(7) 0.0002(18) 0.0014(5) 0.000(2)
+Al11 Al 0.0140(8) 0.0095(8) 0.0086(8) -0.0039(7) 0.0045(6) -0.0001(7)
+Al12 Al 0.0078(18) 0.0075(15) 0.0089(16) 0.0003(10) 0.0041(12) -0.0001(13)
+Al13 Al 0.0063(9) 0.0111(9) 0.0107(12) -0.0028(7) 0.0013(7) 0.0015(9)
+Al14 Al 0.0064(9) 0.0123(10) 0.0139(13) -0.0019(8) 0.0006(8) -0.0007(10)
+Al15 Al 0.0072(12) 0.0084(12) 0.0077(13) -0.0021(9) 0.0021(9) 0.0019(10)
+Al16 Al 0.0112(17) 0.0063(15) 0.0096(15) -0.0002(10) 0.0026(12) 0.0001(13)
+loop_
+_atom_type_symbol
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Al 0.0645 0.0514 'International Tables Vol C tables 4.2.6.8 and 6.1.1.1'
+Fe 0.3463 0.8444 'International Tables Vol C tables 4.2.6.8 and 6.1.1.1'
+Si 0.0817 0.0704 'International Tables Vol C tables 4.2.6.8 and 6.1.1.1'
+
+# [geometry tables omitted]

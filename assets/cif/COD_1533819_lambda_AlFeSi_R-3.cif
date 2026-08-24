@@ -1,0 +1,86 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# https://www.crystallography.net/cod/1533819.cif
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1533819
+loop_
+_publ_author_name
+'Sugiyama, K.'
+'Kaji, N.'
+'Hiraga, K.'
+_publ_section_title
+;
+ Crystal structure of rhombohedral lambda-(Al Fe Si)
+;
+_journal_name_full               'Journal of Alloys Compd.'
+_journal_page_first              251
+_journal_page_last               255
+_journal_volume                  368
+_journal_year                    2004
+_chemical_formula_sum            'Al77.69 Fe25.46 Si19.85'
+_space_group_IT_number           148
+_symmetry_space_group_name_Hall  '-R 3'
+_symmetry_space_group_name_H-M   'R -3 :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            1
+_cell_length_a                   10.222
+_cell_length_b                   10.222
+_cell_length_c                   19.667
+_cell_volume                     1779.674
+_citation_journal_id_ASTM        JALCEU
+_cod_data_source_file            Sugiyama_JALCEU_2004_1431.cif
+_cod_data_source_block           Al77.69Fe25.46Si19.85
+_cod_database_code               1533819
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+-x,-y,-z
+y,-x+y,-z
+x-y,x,-z
+x+2/3,y+1/3,z+1/3
+-y+2/3,x-y+1/3,z+1/3
+-x+y+2/3,-x+1/3,z+1/3
+-x+2/3,-y+1/3,-z+1/3
+y+2/3,-x+y+1/3,-z+1/3
+x-y+2/3,x+1/3,-z+1/3
+x+1/3,y+2/3,z+2/3
+-y+1/3,x-y+2/3,z+2/3
+-x+y+1/3,-x+2/3,z+2/3
+-x+1/3,-y+2/3,-z+2/3
+y+1/3,-x+y+2/3,-z+2/3
+x-y+1/3,x+2/3,-z+2/3
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Si4 Si 0.12015 0.36035 0.66336 0.023 0.0
+Al6 Al 0.37833 0.83868 0.77917 0.977 0.0
+Fe2 Fe 0 0 0.79313 1 0.0
+Si1 Si 0 0 0 0.012 0.0
+Al3 Al 0.12015 0.36035 0.66336 0.977 0.0
+Si7 Si 0.37833 0.83868 0.77917 0.023 0.0
+Al5 Al 0.88076 0.33253 0.87132 0.977 0.0
+Al2 Al 0 0 0.61541 0.977 0.0
+Fe3 Fe 0.91626 0.33763 0.7424 1 0.0
+Si2 Si 0 0 0.61541 0.023 0.0
+Fe1 Fe 0 0 0 0.493 0.0
+Si6 Si 0.88076 0.33253 0.87132 0.023 0.0
+Si5 Si 0.84628 0.06579 0.71167 0.023 0.0
+Al4 Al 0.84628 0.06579 0.71167 0.977 0.0
+Al1 Al 0 0 0 0.495 0.0
+Si3 Si 0.066 0.24965 0.79432 1 0.0
