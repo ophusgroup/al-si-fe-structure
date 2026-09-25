@@ -29,26 +29,31 @@ THEME = os.path.normpath(
 _RUNTIME = """
 ;(function(){
   /* ---------- flat top-bar search (replaces the theme's dialog) -------- */
-  var idx=null,loading=false,waiters=[];
-  function indexUrls(){
+  var idx=null,loading=false,waiters=[],base='';
+  /* Record URLs in the index are written from the site root ('/modules/...')
+     with no path prefix, so on a GitHub Pages project site they have to be
+     prefixed or every hit lands on the 404 page. The prefix that serves the
+     index is the prefix the pages live under, so probe for it and keep it. */
+  function basePrefixes(){
     var seg=window.location.pathname.split('/').filter(Boolean);
-    var urls=['/myst.search.json'];
-    if(seg.length)urls.unshift('/'+seg[0]+'/myst.search.json');
-    return urls;
+    return seg.length?['/'+seg[0],'']:[''];
+  }
+  function href(u){
+    return (u&&u.charAt(0)==='/')?base+u:u;
   }
   function load(cb){
     if(cb&&idx)return cb();
     if(cb)waiters.push(cb);
     if(idx||loading)return;
     loading=true;
-    var urls=indexUrls();
+    var pre=basePrefixes();
     function attempt(i){
-      if(i>=urls.length){loading=false;waiters=[];return;}
-      fetch(urls[i]).then(function(r){
+      if(i>=pre.length){loading=false;waiters=[];return;}
+      fetch(pre[i]+'/myst.search.json').then(function(r){
         if(!r.ok)throw new Error('http '+r.status);
         return r.json();
       }).then(function(d){
-        idx=d.records||[];loading=false;
+        idx=d.records||[];base=pre[i];loading=false;
         var w=waiters;waiters=[];w.forEach(function(f){f();});
       }).catch(function(){attempt(i+1);});
     }
@@ -113,7 +118,7 @@ _RUNTIME = """
       if(!hits.length){list.hidden=true;return;}
       hits.forEach(function(h,i){
         var a=document.createElement('a');
-        a.href=h.url;
+        a.href=href(h.url);
         a.className='msc-search-hit'+(i===active?' active':'');
         var t=document.createElement('div');
         t.className='msc-search-hit-title';
@@ -147,7 +152,7 @@ _RUNTIME = """
         render();
       }else if(ev.key==='Enter'){
         var h=hits[active<0?0:active];
-        if(h){ev.preventDefault();window.location.href=h.url;}
+        if(h){ev.preventDefault();window.location.href=href(h.url);}
       }else if(ev.key==='Escape'){
         input.value='';hits=[];render();input.blur();
       }
